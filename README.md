@@ -16,7 +16,22 @@ pip3 install -r ./requirements.txt
 
 Then:
 
+
+Edit `beeves_speech_server.json` to put the absolute path to `start_beeves_speech_server.sh`:
+
+
 ```
-./beeves-speech-server.py
+{
+  "name": "beeves_speech_server",
+  "description": "Example host for native messaging",
+  "path": "/home/altan/cap/beeves-speech-server/start_beeves_speech_server.sh",
+  "type": "stdio",
+  "allowed_extensions": [ "beeves@beeves.dev" ]
+}
+
+```
+
+```
+cp ./add-on/beeves_speech_server.json $HOME/.mozilla/native-messaging-hosts/beeves_speech_server.json
 ```
 
